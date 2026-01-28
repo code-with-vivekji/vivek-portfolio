@@ -1,0 +1,127 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cards */
+.custom-card {
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+/* Profile */
+.profile-img {
+  transition: transform 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+}
+/* ===== PROFILE IMAGE MODAL ===== */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #6366f1, #3b82f6);
+}
+
+/* ===== CERTIFICATE CAROUSEL FIXED ===== */
+.carousel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;   /* ⭐ VERY IMPORTANT */
+}
+
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🔥 IMAGE PERFECT FIT */
+.carousel-item img {
+  width: auto;
+  max-width: 90%;
+  max-height: 70vh;   /* screen ke andar fit */
+  object-fit: contain;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+.certificate-title {
+  margin-top: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #1e293b;
+}
+
+/* buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 20;          /* ⭐ button upar rahe */
+  pointer-events: auto;/* ⭐ click force enable */
+}
+
+
+.carousel-btn.left { left: 15px; }
+.carousel-btn.right { right: 15px; }
+
+
+/* Contact inputs */
+input, textarea {
+  border: 1px solid #c7d2fe;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.footer-text {
+  font-size: 14px;
+ 
+}
